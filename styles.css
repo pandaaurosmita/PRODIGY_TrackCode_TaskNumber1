@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+}
+
+.navbar.scrolled {
+    background-color: #551919;
+}
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e2e2e2;
+}
+
+#services {
+    background-color: #cccccc;
+}
+
+#contact {
+    background-color: #bfbfbf;
+}
+
+#contact {
+    background-color: #ebb916;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contact h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 86, 179, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/front-view-female-courier-red-uniform-with-coffee-cups-yellow-background-worker-delivery-covid-pandemic-job-uniform-virus.jpg);
+    background-size: cover;
+    background-position: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#about {
+    position: relative;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    background-image: url('images/pexels-chanwalrus-958545.jpg');
+    background-size: cover;
+    background-position: start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+#about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#about p {
+    color: #e2e2e2;
+    font-size: 25px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.display {
+    width: 40%;
+    height: auto;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fixdisplay {
+    width: 80%;
+    margin: auto;
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+#services {
+    background-image: url(images/street-chinese-food-with-copy-space_23-2148242502.avif);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#services h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.service-item {
+    margin-bottom: 20px;
+    color: #fff;
+    width: 33.33%;
+    float: left;
+}
+
+.service-item figure {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.service-item figcaption {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.footer-content {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .socials li {
+    margin: 0 10px;
+}
+
+.footer-content .socials li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.footer-content .socials li a:hover img {
+    transform: scale(1.2);
+}
+
+.contact {
+    width: 200px;
+    height: 50px;
+    background-color: #330303;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .navbar a {
+        padding: 8px 10px;
+    }
+
+    .contact {
+        width: 120px;
+        height: 35px;
+        font-size: 0.875rem;
+    }
+
+    #about h1,
+    #services h1,
+    #contact h1,
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p,
+    #about p,
+    #contact p {
+        font-size: 0.875rem;
+    }
+
+    .display {
+        width: 80%;
+        margin: auto;
+    }
+
+    .service-item figure {      
+        padding: 15px;
+        display: block;
+    }
+
+    #services {
+        padding: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .service-item {
+        width: 100%;
+    }
+}
